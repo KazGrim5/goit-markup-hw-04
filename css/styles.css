@@ -70,10 +70,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
-
   margin-right: 70px;
-  margin-left: 150px;
-  padding: 0;
 }
 .ullink {
   display: flex;
@@ -81,13 +78,19 @@ section {
   padding: 0;
 }
 .ullink-link {
+  display: flex;
+  justify-content: center;
   margin-right: 37px;
-}
-.ullink-link:not(:first-child) {
-  margin-right: 170px;
 }
 .web {
   color: #2196f3;
+}
+.navmenu-link {
+  color: #212121;
+}
+.link {
+  color: #757575;
+  margin-left: 10px;
 }
 .navmenu-link,
 .link {
@@ -96,7 +99,10 @@ section {
   font-weight: 500;
   line-height: 1.17;
   font-size: 14px;
-  color: #212121;
+}
+.ullink-link:hover {
+  stroke: #2196f3;
+  fill: #2196f3;
 }
 .navmenu-link:hover,
 .link:hover {
@@ -105,11 +111,20 @@ section {
 }
 /*index*/
 .back {
+  background-image: url("/images/tlo.jpg");
   background-color: #2f303a;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.backt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 106px;
+  padding-bottom: 106px;
 }
 .title {
   font-weight: 900;
