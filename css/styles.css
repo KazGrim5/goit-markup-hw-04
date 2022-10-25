@@ -6,7 +6,8 @@ li {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -101,18 +102,21 @@ section {
   font-size: 14px;
 }
 .ullink-link:hover {
-  stroke: #2196f3;
-  fill: #2196f3;
+  --color3: #2196f3;
+  color: #2196f3;
+  cursor: pointer;
 }
 .navmenu-link:hover,
 .link:hover {
+  --color3: #2196f3;
   color: #2196f3;
   cursor: pointer;
 }
 /*index*/
 .back {
-  background-image: url("/images/tlo.jpg");
-  background-color: #2f303a;
+  background-size: cover;
+  background-image: url("/images/tlo.png");
+  background-color: #2f303a 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,8 +127,6 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 106px;
-  padding-bottom: 106px;
 }
 .title {
   font-weight: 900;
@@ -158,6 +160,10 @@ section {
   display: flex;
   justify-content: center;
 }
+.svgicon {
+  background: #F5F4FA;
+  border-radius: 4px;
+}
 .lorem {
   font-weight: 700;
   font-size: 14px;
@@ -190,7 +196,6 @@ section {
 .li-img {
   display: flex;
   margin-right: 22px;
-  margin-bottom: 70px;
 }
 .back3 {
   background-color: #f5f4fa;
@@ -206,7 +211,6 @@ section {
 
   display: flex;
   justify-content: center;
-  margin-top: 141px;
 }
 .zesul {
   display: flex;
@@ -225,7 +229,6 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-right: 22px;
-  margin-bottom: 70px;
   margin-top: 37px;
 }
 .john {
@@ -245,6 +248,52 @@ section {
   flex-direction: column;
   padding: 30px;
 }
+.div-a-john {
+  display: flex;
+}
+.a-john {
+  fill: #afb1b8;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  margin-top: 16px;
+}
+.a-john:not(:last-child) {
+  margin-right: 10px;
+}
+.a-john:hover {
+  fill: #fff;
+  background-color: #2196f3;
+}
+.title4 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  display: flex;
+  justify-content: center;
+}
+.clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.liclient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a-client {
+  --color1: #afb1b8;
+  --color2: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.a-client:hover {
+  --color1: #2196f3;
+  --color2: #2196f3;
+  border: 1px solid #2196f3;
+}
 /*portfolio*/
 .ulbutt {
   display: flex;
@@ -263,6 +312,10 @@ section {
   flex-direction: column;
   border: 1px solid #eeeeee;
   margin-top: 30px;
+}
+.porli:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 .button {
   font-family: inherit;
@@ -337,4 +390,33 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.divf {
+  display: flex;
+}
+.socialh {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #fff;
+}
+.socialdiv {
+  margin-left: 70px;
+}
+.div-a-social {
+  display: flex;
+}
+.a-social {
+  fill: #fff;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  margin-top: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.a-social:not(:last-child) {
+  margin-right: 10px;
+}
+.a-social:hover {
+  background-color: #2196f3;
 }
